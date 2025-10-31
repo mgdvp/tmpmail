@@ -1,0 +1,168 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+* {
+	scrollbar-width: auto;
+	scrollbar-color: #8c8c8c #ffffff;
+}
+
+*::-webkit-scrollbar {
+	width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #aaa;
+}
+
+body{
+	font-family: 'Source Sans Pro', sans-serif !important;
+	background-color: #141313;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	color: #eee;
+	text-align: center;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+
+header, #mailaddress{
+	padding: 0.5rem;
+}
+
+header{
+	padding-top: 1rem;
+}
+
+#se{
+	width: 90%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+#r{
+	text-align: right;
+}
+
+#outbox{
+	overflow: hidden;
+	border-radius: 12px;
+	border-top-right-radius: 0;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+#inbox{
+	height: 60vh;
+	overflow-y: auto;
+	max-height: 60vh;
+}
+
+.msg-preview{
+	background-color: rgba(0, 0, 0, 0.1);
+	padding: 16px;
+	border-bottom: 1px solid rgba(180, 180, 180, 0.5);
+	cursor: pointer;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: left;
+}
+
+.lt, .rt{
+	width: 50%;
+}
+
+.rt{
+	text-align: right;
+}
+
+.msg-preview:hover{
+	background-color: rgba(0, 0, 0, 0.175);
+}
+
+.msg-preview:last-child{
+	border-bottom: none;
+}
+
+h3{
+	margin-bottom: 10px;
+}
+
+button{
+	font-family: inherit;
+	font-size: 16px;
+	padding: 7px 14px;
+	background-color: rgba(0, 0, 0, 0.2);
+	border: none;
+	cursor: pointer;
+	border-radius: 12px 12px 0 0;
+}
+
+button svg{
+	fill: #eee;
+}
+
+button:hover{
+	opacity: 0.9;
+}
+
+.msg-preview p{
+	color: #ccc;
+	margin-bottom: 2px 3px;
+}
+
+hr{
+	background-color: #888;
+	width: 90%;
+	max-width: 960px;
+	height: 1px;
+	border: none;
+	margin: 1rem auto;
+}
+
+footer{
+	padding: 1.5rem;
+}
+
+a{
+	color: #d5ea99;
+	text-decoration: none;
+	padding: 4px;
+	border-radius: 12px;
+}
+
+a:hover{
+	background-color: #d5ea99;
+	color: #300;
+}
+
+@media screen and (max-height: 560px){
+	body{
+		overflow-y: auto;
+	}
+}
+
+@media screen and (max-width: 460px){
+	body{
+		overflow-y: auto;
+	}
+}
+
+.abs{
+	position: absolute;
+	right: 1.77rem;
+	top: 1rem;
+}
+
+.abs .github-logo{
+	fill: #eee;
+}
+
+.abs:hover .github-logo{
+	fill: #111;
+}
